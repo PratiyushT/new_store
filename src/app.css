@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/*Tailwind CSS*/
+@import "tailwindcss";
+@tailwind utilities;
+
+
+:root {
+  --gold-primary: #FFBF00;
+  --gold-light: #FFD966;
+  --gold-dark: #CC9900;
+  --white: #FFFFFF;
+  --black: #111111;
+  --gray-light: #F5F5F5;
+  --gray-medium: #DDDDDD;
+  --gray-dark: #666666;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 600;
+}
+
+/* Custom Classes */
+@layer components {
+  .btn-primary {
+    @apply bg-gold-500 text-white px-4 py-2 rounded-none hover:bg-gold-600 transition duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-black border border-gold-500 px-4 py-2 rounded-none hover:bg-gold-50 transition duration-300;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6;
+  }
+
+  .product-card {
+    @apply bg-white shadow-sm hover:shadow-md transition duration-300;
+  }
+
+  .gold-gradient {
+    @apply bg-gradient-to-r from-gold-400 to-gold-600;
+  }
+}
