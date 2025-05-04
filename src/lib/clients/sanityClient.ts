@@ -3,7 +3,7 @@ import {createClient} from "@sanity/client";
 import {SANITY_DATASET, SANITY_PROJECT_ID} from "$lib/utils/env";
 
 
-export const client = createClient({
+export const sanityClient = createClient({
   projectId: SANITY_PROJECT_ID,
   dataset: SANITY_DATASET,
   apiVersion: '2023-01-01',
@@ -13,4 +13,4 @@ export const client = createClient({
 });
 
 
-export default client;
+export default sanityClient;

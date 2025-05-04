@@ -39,7 +39,6 @@ pransh-luxury-frontend/
 │   │   │   ├── stripeClient.ts
 │   │   │   └── supabaseClient.ts
 │   │   ├── auth/                              # Supabase auth helpers
-│   │   │   ├── client.ts                      # Supabase client initialization
 │   │   │   └── hooks.server.ts                # Auth hooks for SvelteKit SSR
 │   │   ├── types/                             # TypeScript definitions
 │   │   │   ├── index.ts                       # Centralized exports

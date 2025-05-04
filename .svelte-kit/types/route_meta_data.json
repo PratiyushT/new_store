@@ -1,0 +1,14 @@
+{
+	"/": [],
+	"/about": [],
+	"/cart": [],
+	"/collections": [],
+	"/collections/[id]": [
+		"src/routes/collections/[id]/+page.js"
+	],
+	"/contact": [],
+	"/product/[id]": [
+		"src/routes/product/[id]/+page.js"
+	],
+	"/shop": []
+}
